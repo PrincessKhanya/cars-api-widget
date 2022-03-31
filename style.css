@@ -1,12 +1,110 @@
-/* 
-Blue
-Red
-Orange
-White
-Grey
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-Volkswagen
-Toyota
-Nissan
-Ford */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f7ff;
+    /* text-align: center; ffd8be 462255*/
+}
+
+header{
+    
+    height: 45px;
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    margin: auto;
+    font-family: 'STIX Two Math', serif;  
+}
+
+.navbar {
+    max-width: 2000px;
+    margin: auto;
+    height: 40px;     
+}
+
+ul {
+    
+    float: right;
+    display: flex;
+    padding: 1px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    text-align: right;
+    list-style: none;
+    display: inline-block;
+    padding: 1px 12px;
+    position: relative;
+}
+
+ul li a{
+    color: #462255;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgba(62, 32, 127, 0.5);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+ul li:hover::after{
+    width: 100%;
+}
+
+.colorHolder{
+    background-color: #b8b8ff;
+    margin: 1em;
+    text-align: center;
+}
+.makeHolder{
+    background-color: #b8b8ff;
+    margin: 1em;
+    text-align: center;
+}
+
+#colorList{
+    color: rgb(0, 0, 0);
+    height: 2em;
+}
+#listMake{
+    color: rgb(0, 0, 0);
+    height: 2em;
+}
+.btnHolder{
+    margin: 1em;
+    text-align: center;
+}
+.btn{
+    background-color: #462255 ;
+    color: #fff;
+    height: 2em;
+    width: 10em;
+}
+.resultsHolder{
+    margin: 1em;
+    text-align: center;
+
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: auto;
+}
+th, td{
+    padding: 0.6250em 1.25em;
+    border: 0.01em solid #000;
+}

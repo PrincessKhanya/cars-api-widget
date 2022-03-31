@@ -2,6 +2,17 @@ const contacts = document.querySelector(".contacts")
 const carColor = document.querySelector(".carColor")
 const carMakes = document.querySelector(".carMakes")
 
+contacts.innerHTML = '';
+const th = document.createElement('tr')
+th.innerHTML = `
+                    </tr>
+                        <th>make</th> 
+                        <th>model</th>
+                        <th>color</th>
+                        <th>price</th>
+                        <th>reg_number</th>
+                    </tr>`
+contacts.appendChild(th);
 axios
     .get("https://api-tutor.herokuapp.com/v1/cars")
     .then(function (response) {
@@ -34,7 +45,7 @@ axios
 
     });
 
-    axios
+axios
     .get("https://api-tutor.herokuapp.com/v1/makes")
     .then(function (response) {
         //console.log(response.data)

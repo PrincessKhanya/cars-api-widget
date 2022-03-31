@@ -9,38 +9,60 @@
         integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+
 </head>
+
+
 
 <body>
     <div class="container">
-        <h1>Please select a colour</h1>
-        <select id="colorList" onchange="getSelectedColor();">
-            <option value="">Click arrow to select color</option>
-            <option value="blue">Blue</option>
-            <option value="red">Red</option>
-            <option value="orange">Orange</option>
-            <option value="White">White</option>
-            <option value="grey">Grey</option>
-        </select>
-        <h1>Please select car brand</h1>
-        <select id="listMake" onchange="getSelectedMake();">
-            <option value="">Click arrow to select car brand</option>
-            <option value="volkswagen">Volkswagen</option>
-            <option value="toyota">Toyota</option>
-            <option value="nissan">Nissan</option>
-            <option value="ford">Ford</option>
-        </select>
-        <br><br>
-        <button type="submit" class="btn">Submit</button>
-        <h1>Here are your filted results</h1>
-        <table class="results">
-
-        </table>
+        <header>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Filter</a></li>
+                    <li><a href="index1.html">Display all available cars</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="colorHolder">
+            <h1>Please select a colour</h1>
+            <select id="colorList" onchange="getSelectedColor();">
+                <option value="">Click arrow to select color</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="White">White</option>
+                <option value="grey">Grey</option>
+            </select>
+            <br>
+            <br>
         </div>
+        <div class="makeHolder">
+            <h1>Please select car brand</h1>
+            <select id="listMake" onchange="getSelectedMake();">
+                <option value="">Click arrow to select car brand</option>
+                <option value="volkswagen">Volkswagen</option>
+                <option value="toyota">Toyota</option>
+                <option value="nissan">Nissan</option>
+                <option value="ford">Ford</option>
+            </select>
+            <br>
+            <br>
+        </div>
+        <div class="btnHolder">
+            <button type="submit" class="btn">Submit</button>
+        </div>
+        <div class="resultsHolder">
+            <h1>Here are your filted results</h1>
+            <table class="results">
+            
+            </table>
+        </div>
+        <br>
+        <br>  
     </div>
     <script src="index.js"></script>
-
-
 </body>
-
 </html>
