@@ -105,7 +105,7 @@ btn.addEventListener("click", function () {
 
     } else if (carColor.length == 0 && carMake.length == 0) {
         results.innerHTML = '';
-        results.innerHTML = 'Nothing was selected'
+        results.innerHTML = '<h5>Nothing was selected</h5>'
     }
 
 })
